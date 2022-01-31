@@ -99,6 +99,10 @@ nav ul{
     footer{
         text-align: center;
     }
+    .form-wrapper input{
+        width: 25%;
+/*         background-color: red; */
+    }
 }
 @media screen and (max-width:262px){
     nav{
