@@ -1,0 +1,283 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.ASAP{
+    padding: 2rem;
+    /* font-family: 'Moon Dance', cursive; */
+}
+button{
+    padding: 1rem 1rem;
+    border: none;
+    color: black;
+    background-color: #00ff5a;
+    border-radius: 15%;
+    cursor: pointer;
+}
+body{
+    font-family: 'Permanent Marker', cursive;
+    /* font-weight: 400; */
+}
+/* NAV-SECTION */
+a{
+    text-decoration: none;
+    color: white;
+}
+.main-header{
+    background-color: rgba(1, 19, 15, 0.884);
+    position: sticky;
+    top:0px;
+    z-index: 3;
+}
+nav{
+    min-height:10vh;
+    padding: 1.5rem;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    color: white;   
+}
+#logo{
+    flex:3 1 40rem;
+    align-items: center;
+    justify-content: center;
+    font-style: oblique;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex:1 1 40em;
+    list-style: none;
+    /* text-emphasis-color: black; */
+    
+}
+.hero{
+    min-height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5),transparent),
+        url(./pics/cityatnight.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:1500px){
+    footer{
+        text-align: center;
+    }
+    footer h3{
+        padding-bottom: 2rem;
+    }
+}
+@media screen and (max-width:600px) {
+    nav{
+        display:flex;
+        flex-direction: column;
+        height: 1.5rem;
+    }
+    li{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+    }
+    /* .cloud{
+        height: 15rem;
+    }  */
+    .moving-cloud-1{
+        z-index: -1;
+    }
+    footer{
+        text-align: center;
+    }
+}
+@media screen and (max-width:262px){
+    nav{
+        min-height: 6rem;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    li{
+        padding: 0%;
+    }
+    .cloud{
+        height: 5rem;
+    }
+    .moving-cloud-1{
+        z-index: -1;
+    }
+}
+/* LOCATION-SECTION */
+#locations{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),transparent),
+                url(./pics/city4.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+.location-head{
+    width:90%;
+    margin:auto;
+}
+.location-head h2{
+    padding: 1rem 0rem;
+    color: #262121;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+.location-head h3{
+    color: rgb(35, 6, 82);
+    padding:2rem 0rem;
+    font-size: 1.5rem;
+}
+.cloud{
+    position: absolute;
+    top: -5%;
+    right: -5%;
+    height: 25rem;
+    /* background-size: 2rem; */
+}
+.moving-cloud-1{
+    animation: cloudsanimation 3s infinite alternate ease-in-out;
+}
+.moving-cloud-2{
+    animation: cloudsanimation 4s infinite alternate ease-in-out;
+    top: 20%;
+    z-index: -1;
+    
+}
+/* benfis section */
+.benefits-head{
+    background-color: rgb(94 95 98);
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #d1ccda;
+    text-align: center;
+}
+.benefits-head h3{
+    padding: 1rem;
+}
+.cards{
+    width: 100%;
+    margin: 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    background-color: cyan;
+}
+.card{
+    text-align: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    margin: 2rem 5rem;
+    min-height: 40vh;
+    flex: 1 1 12rem;
+}
+.card h4,.card p{
+    padding: 1rem;
+}
+.card-icon{
+    background-color: rgb(94 95 98);
+}
+.card img{
+    max-width: 17%;
+    margin: 2rem;
+}
+#contact{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),transparent),
+    url(./pics/city4.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.form-wrapper{
+    background-color: rgba(19, 28, 39, 0.74);
+    color: white;
+    width: 40%;
+    border-radius: 20px;
+    /* min-height: 30vh; */
+    /* opacity: 0.5;0 */
+}
+.form-head{
+    text-align: center;
+    padding: 2rem;
+}
+.form-name,.form-email{
+    padding:1rem;
+    text-align: center;
+}
+.form-wrapper button{
+    width: 100%;
+    margin-top:2rem;
+    border-radius: 0%;
+    background-color: rgba(39, 32, 32, 0.892);
+    color:wheat;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+}
+.form-wrapper button:hover{
+    /* animation: buttonki; */
+    background-color:mediumturquoise;
+}
+footer{
+    color: black;
+    background-color: #1bec64;
+    
+}
+.foot-wrapper h3{
+    flex:1 1 40rem;
+    /* min-height: 30px; */
+    float: left;
+}
+.foot-wrapper ul{
+    display:flex;
+    flex:1 1 40rem;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.foot-wrapper ul  a img{
+    min-height: 40px;
+}
+.foot-wrapper{
+    display: flex ;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+@keyframes cloudsanimation{
+    from{
+        transform: translate(10%,-20%);
+    }
+    to{
+        transform: translate(0%,0%);
+    }
+    
+}
