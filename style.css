@@ -99,10 +99,7 @@ nav ul{
     footer{
         text-align: center;
     }
-    .form-wrapper input{
-        width: 25%;
-/*         background-color: red; */
-    }
+    
 }
 @media screen and (max-width:262px){
     nav{
@@ -221,7 +218,7 @@ nav ul{
 .form-wrapper{
     background-color: rgba(19, 28, 39, 0.74);
     color: white;
-    width: 40%;
+/*     width: 40%; */
     border-radius: 20px;
     /* min-height: 30vh; */
     /* opacity: 0.5;0 */
